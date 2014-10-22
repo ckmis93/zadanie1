@@ -7,14 +7,15 @@
 
 include("car.php");
 
-$myCar = new Car('Trabant', 150);
+$myCar[0] = new Car('Trabant', 150);
 
-echo "===============<br/>";
-echo "Samochód: ".$myCar->getModel()."<br/>";
-echo "Przyśpieszenie: ".$myCar->getAcceleration()."<br/>";
-echo "Maksymalna prędkość: ".$myCar->getVMax()."<br/>";
-echo "===============<br/>";
-
+for ($i=0; $i<sizeOf($myCar); $i++){
+	echo "===============<br/>";
+	echo "Samochód: ".$myCar[$i]->getModel()."<br/>";
+	echo "Przyśpieszenie: ".$myCar[$i]->getAcceleration()."<br/>";
+	echo "Maksymalna prędkość: ".$myCar[$i]->getVMax()."<br/>";
+	echo "===============<br/>";
+}
 //$myCar->drive();
 ?>
 </BODY>
