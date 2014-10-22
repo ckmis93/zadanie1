@@ -16,11 +16,11 @@ $myCar[4] = new Car('Ferrari', 250);
 for ($i=0; $i<sizeOf($myCar); $i++){
 	echo "===============<br/>";
 	echo "Samochód: ".$myCar[$i]->getModel()."<br/>";
-	echo "Przyśpieszenie: ".$myCar[$i]->getAcceleration()."<br/>";
-	echo "Maksymalna prędkość: ".$myCar[$i]->getVMax()."<br/>";
+	echo "Przyśpieszenie: ".$myCar[$i]->getAcceleration()." sekund do 100Km<br/>";
+	echo "Maksymalna prędkość: ".$myCar[$i]->getVMax()." Km/h<br/>";
 	echo "===============<br/>";
 }
-//$myCar->drive();
+
 ?>
 </BODY>
 
